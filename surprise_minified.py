@@ -341,8 +341,7 @@ Tu es venue à bout de cette petite chasse au trésor ... pour cette partie seul
 
 # Call the main function to run the script
 if __name__ == "__main__":
-    #main()
-    pass
+    main()
 
 
 
