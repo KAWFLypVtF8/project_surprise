@@ -14,6 +14,7 @@ Q=''
 B.t=B.random
 
 
+# Function to clear the console
 def D():os.system('cls'if os.name=='nt'else'clear')
     
 def E(d):
@@ -25,6 +26,7 @@ def O(r):
 	for D in r:A+=F((ord(D)+B.t.randint(C)%256)%256)
 	return A
 
+# Function to ask a question and get the user's response
 def K(e, t,f):
     while H:
         B.t.seed(f)
@@ -39,6 +41,7 @@ def K(e, t,f):
             J.sleep(0.7)
             D()
 
+# Function to display the menu and get the user's choice
 def DM(p,s):
     D()
     B.t.seed(s)
@@ -88,17 +91,19 @@ def DsM(p,x):
         return 'ESC'
     return v
 
+# Function to execute a series of questions
 def Gr(f,e):
     for i, t, y, u in f:
         if u:
             continue
         D()
         o = K(t, y,e)
-        if o == "ESC":  
+        if o == "ESC":  # Check if the answer is the "ESC" key
             return o, f
         f[i][3]=H
     return X, f
 
+# Main function of the script
 def main():
     
     Trigger_before_menu =H
@@ -123,7 +128,8 @@ def main():
     Z2 = [
         [0, '\x8c\x93¨´}\\ë\x9e¿\x96\x94\x11\x12ÝÜ÷\x83ôD\x82¹]àu þ¬\x1eØ\x92\x94\x90ôwÆÑ\x13t¸e\x94\x86¡»°p\x89Æp\n\x80ëÐ\x88¨\x19ßw\x05\xad\x94CÑ\nä \x1d\x8d\x99\x94ËºÀ"srâ\x84¢®±·\x92W¼Íéö\x84úÞ\x15¦\x96øCØ\x903¿\x8c\x9d¡¿u\x92ÌÆºÁ\x99Üð·½p½º%\x12é\x8b±\x96/\x12o]Ì|ê¤üíj¹\x90\x91ôÂ«a\x0c¿Ø\x91\x1b\x12k½\x92\\µ×\x8aÙ©ÕP\x8d\rÈò»j\x11P\x13müz¸\x9aXé\x9d·s·', 'Rrkyst/Ohqmt\x7fczk' , False],
         [1, '\x81(+\x9a\x9eo=jµÏCÍPæB\x1d\x05Óß¨tï+\x91ÝÏvÐ,Nrt\xad\x94é×P\x0b7øyÆØ\xadÆhq\x97 3¦ÂÙ£~\x89Ó\x1ct¼:}ßÛ÷y¼ËÝ¼\x05°\x95PÓ\x170Û\x1c\x13\x7f\x98A\x9d\x12nËq~u\x8d\x86ôÓ\x06îEäBi\nÚ¡ÚçÕ\x19Q\x94$/\x93\x08Eë&ð\x80È}\x9d\x94Å{äÎ\x81\x0bÈ×êñ¬B\x0bç:|Q\x13z\x03æB ÷O\x01\x95ªÅn"¦$|°EB\x9e÷ø÷¼ÀO-\x84ù¼Q¯a\x0b¶\x95\x8e\nÍ»¶\x9f¯44³×8ÝµËPR\x86DÔn²Ãvn-\x16í\x00pkZ*Ü\x9f\x05Y\x07\x12Q*\x93\x8b&*\x82K\x19Þ3;\x94³', 'S\x7fwjzuc|kor', False],
-        [2, 'iu¢*\x9c\x13V.\x87TÑ\x7fo\xa0ß.\x16ºz ðå\x92$j\x84×\x17ÂdB\x87¼.~\x83\'f\x0fô\x86åÜ\x87Ê^R\x8bW\x91\x8eYF"\x10{ujysúë\x00âw¼\x95öÑ\x18\x93~\x91\x07pÆ\x84lÎ×åñq\x01+\x10ÑD¶s\x0cß¤HP\x0e*\x9eF|U<=òé\x9d;C¹§a\x0b²r\x12qM+8Ù©ÕA\x80n\x00\x07ji;nÀUk¤\x0cN$l\x80\x85OO\x19T;½\x80oý\x85Ó\x0c´\x08ê#ä§,Áh÷ì\rÐß»\x1d\x9d²Ô\x9c2ÂW~\x88u\x8b\x7fz\x81i¼_¼\x17+\x10ì¿v{@(\x83\x91\x83\túû<~j~\x87.bFu´ü\x84Ñ53u\x9c(û\x1aÖ`Þ+x/Çã\x01ö\x81ÀÐ\x8b\x1b}ªvv\x96á,xC\x85:f\x1f¿W3EØá&î¯AJéó[½\x0fß\x00\x7f|\x83®ì6àâ\x0cÜ\x85\x1døûíT¼{ã1\x1c','8;65B1:21;', False]
+        [2, 'iu¢*\x9c\x13V.\x87TÑ\x7fo\xa0ß.\x16ºz ðå\x92$j\x84×\x17ÂdB\x87¼.~\x83\'f\x0fô\x86åÜ\x87Ê^R\x8bW\x91\x8eYF"\x10{ujysúë\x00âw¼\x95öÑ\x18\x93~\x91\x07pÆ\x84lÎ×åñq\x01+\x10ÑD¶s\x0cß¤HP\x0e*\x9eF|U<=òé\x9d;C¹§a\x0b²r\x12qM+8Ù©ÕA\x80n\x00\x07ji;nÀUk¤\x0cN$l\x80\x85OO\x19T;½\x80oý\x85Ó\x0c´\x08ê#ä§,Áh÷ì\rÐß»\x1d\x9d²Ô\x9c2ÂW~\x88u\x8b\x7fz\x81i¼_¼\x17+\x10ì¿v{@(\x83\x91\x83\túû<~j~\x87.bFu´ü\x84Ñ53u\x9c(û\x1aÖ`Þ+x/Çã\x01ö\x81ÀÐ\x8b\x1b}ªvv\x96á,xC\x85:f\x1f¿W3EØá&î¯AJéó[½\x0fß\x00\x7f|\x83®ì6àâ\x0cÜ\x85\x1døûíT¼{ã1\x1c','8;65B1:21;', False],
+        [3, "\x96\x1e9\x99\x90{/°®*¬¿\x88'\x94$\t\x8a\x8d\x92\x1bÄ#\x96æ\x18ôÝqþéû¹\x11ìè\x95Mãóu\x0fØÒÂ·nB\x1fx¥m&±t×Ç-f\x0f\x02J¤qáh°ËßÌ±®\x87\x95Ñ\x18>ä!Î\x8f\x94ø\x9f\x10Ã{nnv\x8d\x86ùÉöìS\x92zpáÜâØîÑÒQ\x89+/\x9c¹7ôÔ1+Ï\x86\x9d¤Åp\x92ÍÆ\x10ÅÓàñc4\x11;iÎ¬4%\x12é\x90ÛåOU\x8e³\x19s,\x9fÚ3Ò,Oíùþíj¹\x9e0Cï²ÿ¶´\x0cÆÙ\x91É\x11°q\x99\x9då6ªä\x8bÛ®Ð\x95ü\x96\x99É)ó\x80wo<\x15m®n°\x9amé\x9e\x0b\x9e\x05\x18\rÀ}Á\x8f\x85¡I\x0bÙ$;\x94³",'rmzfeita:', False]
     ]
     
     Z3 = [
@@ -335,7 +341,8 @@ Tu es venue à bout de cette petite chasse au trésor ... pour cette partie seul
 
 # Call the main function to run the script
 if __name__ == "__main__":
-    main()
+    #main()
+    pass
 
 
 
